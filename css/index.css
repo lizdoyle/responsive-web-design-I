@@ -50,6 +50,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+/* Beginning of Code */
 * {
     box-sizing: border-box;
 }
@@ -66,12 +67,15 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Top of Home Page and Basic Styles */
 
 .container {
 	width: 900px;
 	margin: auto;
 	
 }
+
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -89,6 +93,7 @@ header nav a {
 	margin: 20px;
 	color: lightslategray;
 }
+
 header img.logo {
 	margin-top: 30px;
 	margin-left: 20px;
@@ -331,6 +336,116 @@ footer p {
 	margin-left: 30px;
 }
 .foot {
-	margin-top: 50px;
+    margin-top: 50px;
 }
 
+/* Media Queries 800px Home Page */
+
+
+@media( max-width: 800px){
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 800px;
+    }
+   /* Header */
+    header {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    header nav a {
+        padding: 18px;
+    }
+     /* hero */
+    .hero {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        height: 15%;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero h1 {
+       
+        font-size: 60px;
+        text-align: center;
+        line-height: 1.0;
+        letter-spacing: 4px;
+    }
+
+    .heroText {
+        margin: 20px 0 0 0;
+    }
+    
+    
+    .hero img {
+        display: none;
+    }
+
+    .hero button {
+        margin-bottom: 50px;
+        margin-right: 85px;
+        padding: 5px 35px;
+        /* align-self: center; */
+        font-size: 16px;
+        border: 3px solid black;
+
+    }
+    
+    /* Main content */
+    main .main-content {
+
+    }
+
+    main .main-content .top-row{
+        margin: 5px 10px;
+        padding: 10px;
+    }
+
+    .top-row {
+        display: flex;
+	    justify-content: space-around;
+	    padding: 20px 0;
+	    border-top: 1px solid #000;
+	    padding-top: 35px;
+    }
+    .t1 {
+        /* display: inline-block; */
+        width: 40%;
+        /* margin: 0 20px 20px 0; */
+    }
+    .t2 {
+        display: inline-block;
+        width: 40%;
+        /* margin: 0 0 20px 20px; */
+    }
+    
+    /* middle image */
+
+    .main-image {
+        margin: 0px auto;
+    }
+    .middle-img {
+        width: 85%;
+        align: center;
+    
+}
