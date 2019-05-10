@@ -1,3 +1,712 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+/* Beginning of Code */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Top of Home Page and Basic Styles */
+
+.container {
+	width: 900px;
+	margin: auto;
+	
+}
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+
+}
+
+header nav {
+	margin-top: 40px;
+	
+
+}
+header nav a {
+	text-decoration: none;
+	margin: 20px;
+	color: lightslategray;
+}
+
+header img.logo {
+	margin-top: 30px;
+	margin-left: 20px;
+	
+}
+.hero {
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero h1 {
+	/* display: inline-block; */
+	font-family: 'Titillium-Web' sans-serif;
+	line-height: 1.1;
+	font-size: 72px;
+	text-align: center;
+	letter-spacing: 7px;
+	margin: 50px 0;
+
+}
+.heroText {
+	/* display:inline-block; */
+	/* display: flex; */
+	margin: 30px 0 0 20px;
+}
+.hero img {
+	width: 85%;
+	height: 85%;
+	/* display: inline-block; */
+	/* float: right; */
+	/* margin: 50px auto; */
+	/* vertical-align: middle; */
+	/* position: relative; */
+	/* margin-top: 60px; */
+	padding: 50px 50px;
+
+	
+}
+
+.hero button {
+	/* display: block; */
+	margin: 0 0 0 85px;
+	padding: 5px 20px;
+	font-family: 'Titillium-Web' sans-serif;
+	font-size: 20px;
+	background-color: white;
+	border: 2px solid black;
+}
+
+
+main .main-content {
+	/* display: inline-block; */
+	margin: 0 auto;
+	padding: 0 30px;
+
+}
+main .main-content .top-row {
+	/* display: inline-block; */
+	margin: 10px 30px;
+	padding: 20px;
+	width: 250px;
+	height: auto;
+}
+.top-row {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	border-top: 1px solid #000;
+	padding-top: 35px;
+}
+
+.t1 {
+	/* display: inline-block; */
+	width: 47%;
+	/* margin: 0 20px 20px 0; */
+}
+.t2 {
+	display: inline-block;
+	width: 47%;
+	/* margin: 0 0 20px 20px; */
+}
+
+.bottom-row {
+	display:flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	border-bottom: 1px solid #000;
+	padding-bottom: 35px;
+}
+
+.b1 {
+	/* display: inline-block; */
+	width: 30%;
+	/* margin: 0 20px 20px 0; */
+}
+
+.b2 {
+	/* display: inline-block; */
+	width: 30%;
+	
+}
+.b3 {
+	/* display: inline-block; */
+	width: 30%;
+	/* margin: 0 0 20px 20px; */
+}
+.main-image {
+	margin: 30px auto;
+}
+.middle-img {
+	width: 100%;
+
+}
+.Contact {
+	margin: 50px 0;
+}
+footer p {
+	text-align: center;
+}
+/* Services Page */
+
+.servicesection {
+	margin: 40px 0;
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+	margin-bottom: 40px;
+}
+.servicesection, h2 {
+	margin: 20px 0;
+	font-size: 1.6rem;
+}
+
+.servicesection, p {
+	font-family: 'Titillium-Web' sans-serif;
+	text-align: justify;
+	line-height: 1.3;
+	font-size: 1.3rem;
+	
+	
+	
+}
+.btn1 {
+	padding: 10px 20px;
+	border: 1px solid black;
+	background: rgb(255, 255, 255);
+	color: #000;
+	cursor: pointer;
+}
+
+.as1 {
+	display: flex;
+	justify-content: space-between;
+	margin: 35px 0px;
+	margin-top: 45px;
+	/* border-top: 2px, solid, rgb(54, 37, 37); */
+
+	/* width: 300px; */
+	/* height: 150px; */
+}
+.c1 {
+	background: rgb(225, 223, 223);
+		padding: 20px 20px;
+		border: 1px solid black;
+		margin-right: 35px;
+
+}
+
+.c2 {
+	background: rgb(225, 223, 223);
+		padding: 20px 20px;
+		border: 1px solid black;
+
+}
+
+.as2 {
+	display: flex;
+	margin: 35px 0px;
+}
+.c3 {
+	background: rgb(225, 223, 223);
+		padding: 20px 20px;
+		border: 1px solid black;
+		margin-right: 35px;
+
+
+}
+.c4 {
+	background: rgb(225, 223, 223);
+		padding: 20px 20px;
+		border: 1px solid black;
+
+}
+
+.as3 {
+	display: flex;
+	margin: 35px 0px;
+}
+.c5 {
+	background: rgb(225, 223, 223);
+		padding: 20px 20px;
+		border: 1px solid black;
+		margin-right: 35px;
+
+
+}
+.c6 {
+	background: rgb(225, 223, 223);
+		padding: 20px 20px;
+		border: 1px solid black;
+
+}
+.bottom1 {
+	display: flex;
+	border-top: 1px solid black;
+	padding-top: 30px;
+	margin-top: 40px;
+
+}
+
+.bc1 {
+	margin-right: 45px;
+	
+}
+.bc1, p {
+	font-family: 'Titillium-Web' sans-serif;
+	text-align: justify;
+	line-height: 1.3;
+	font-size: 1.3rem;
+	margin-bottom: 20px;
+
+}
+.bc1, ul {
+ 
+	/* margin-left: 20px; */
+	list-style-type: disc;
+}
+.list {
+	margin-left: 30px;
+}
+.foot {
+    margin-top: 50px;
+}
+
+/* Media Queries 800px Home Page */
+
+
+@media( max-width: 800px){
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 800px;
+        min-width: 501px;
+    }
+
+   /* Header */
+    header {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    header nav a {
+        padding: 18px;
+    }
+     /* hero */
+    .hero {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        height: 15%;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero h1 {
+       
+        font-size: 5em;
+        text-align: center;
+        line-height: 1.0;
+        letter-spacing: 4px;
+    }
+
+    .heroText {
+        margin: 20px 0 0 0;
+    }
+    
+    
+    .hero img {
+        display: none;
+    }
+
+    .hero button {
+        margin-bottom: 50px;
+        margin-right: 70px;
+        padding: 5px 35px;
+        align-self: center;
+        font-size: 16px;
+        border: 3px solid black;
+
+    }
+    
+    /* Main content */
+    main .main-content {
+
+    }
+
+    main .main-content .top-row{
+        margin: 5px 10px;
+        /* padding: 10px; */
+    }
+
+    .top-row {
+        display: flex;
+	    justify-content: space-around;
+	    padding: 20px 0;
+        border-top: 3px solid #000;
+        border
+	    padding-top: 35px;
+    }
+    .t1 {
+        /* display: inline-block; */
+        width: 45%;
+        /* margin: 0 20px 20px 0; */
+    }
+    .t2 {
+        /* display: inline-block; */
+        width: 45%;
+        /* margin: 0 0 20px 20px; */
+    }
+    
+    /* middle image */
+
+    .main-image {
+        margin: 0px auto;
+        display: inline;
+    }
+    .middle-img {
+        width: 100%;
+        /* margin-left: 6% */
+    }
+        /* bottom row */
+
+     .bottom-row {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            padding-top: 35px;
+        }
+        .b1 {
+            /* display: inline-block; */
+            width: 28%;
+            /* margin: 0 20px 20px 0; */
+        }
+        .b2 {
+            /* display: inline-block; */
+            width: 28%;
+            /* margin: 0 0 20px 20px; */
+        }
+        .b3 {
+            /* display: inline-block; */
+            width: 28%;
+            /* margin: 0 0 20px 20px; */
+        }
+        /* contact */
+        .Contact {
+            margin: 50px 0 50 50px;
+        }
+        /* services */
+
+        .servicesection {
+            width: 85%;
+            margin: 0 0 0 50px;
+        }
+
+        .servicesection .middle-img {
+            margin-top: 50px;
+        }
+
+        .as1 {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .c1 {
+            width: 85%;
+            
+        }
+        .c2 {
+            margin-left: -35px;
+            margin-top: 35px;
+            width: 85%;
+        }
+        .as2 {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .c3 {
+            width: 85%;
+            
+        }
+        .c4 {
+            margin-left: -35px;
+            margin-top: 35px;
+            width: 85%;
+        }
+        .as3 {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .c5 {
+            width: 85%;
+            
+        }
+        .c6 {
+            margin-left: -35px;
+            margin-top: 35px;
+            width: 85%;
+        }
+
+        .bottom1 {
+            display: flex;
+            flex-flow: column-reverse wrap;
+        }
+        
+        .bc1 {
+                margin-right: 25px;
+        }
+
+        .bc1, p {
+            
+            margin: 20px 40px;
+            font-size: 1rem;
+        
+        }
+        .bottom1 .services-info-img {
+            width: 75%;
+            align-self: center;
+        }
+        .bc1, ul {
+ 
+            font-size: 1rem;
+
+        
+}
+
+/* 500 or less styles */
+
+@media( max-width: 500px){
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 500px;
+        min-width: 275px;
+    }
+
+   /* Header */
+    header {
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+    header nav a {
+        width: 100%;
+        margin-top: -20px;
+        /* padding: 18px; */
+        border-bottom: 1px solid black;
+    }
+    header nav a:first-child {
+        border-top: 1px solid black;
+    }
+     /* hero */
+    .hero {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        height: 15%;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero h1 {
+       margin-top: -5px;
+        font-size: 3.5em;
+        text-align: center;
+        line-height: 1.0;
+        letter-spacing: 2px;
+    }
+
+    .heroText {
+        margin: 20px 0 0 0;
+    }
+    
+    
+    .hero img {
+        display: none;
+    }
+
+    .hero button {
+        margin-bottom: 50px;
+        margin-right: 70px;
+        padding: 5px 35px;
+        align-self: center;
+        font-size: 16px;
+        border: 3px solid black;
+
+    }
+    
+    /* Main content */
+    main .main-content {
+
+    }
+
+    main .main-content .top-row{
+        margin: 5px 10px;
+        /* padding: 10px; */
+    }
+
+    .top-row {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+	    /* margining: 20px 0; */
+        border-top: 3px solid #000;
+        
+    }
+    .t1 {
+        width: 85%;
+    }
+    .t2 {
+        width: 85%;
+    }
+    
+    /* middle image */
+
+    .main-image {
+        margin: 0px auto;
+        display: inline;
+    }
+    .middle-img {
+        width: 88%;
+        margin-left: 6%
+    }
+        /* bottom row */
+
+     .bottom-row {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-content: center;
+            border-bottom: 3px solid black;
+            /* border-radius: 5px; */
+        }
+        .b1 {
+            width: 85%;
+        }
+        .b2 {
+            width: 85%;
+        }
+        .b3 {
+            width: 85%;
+        }
+        /* contact */
+        .Contact {
+            margin: 50px 0 30px 30px;
+        }
+
+/* Services page did not need additional editing at 500px */
+}  
